@@ -18,6 +18,7 @@ NOTE:
 - [PYTHON VERSION 3.7](#pythonversion)
 - [How to start](#howtostart)
 - [discover for assets](#discoverassets)
+- [Save in database](#database)
 - [TODO](#todo)
 - [TIPS AND STRATEGY](#tipsStrategy)
 - [SUPPORT PROJECT](#support)
@@ -88,6 +89,21 @@ python streamrenko.py -a USDJPY -i 15
 just change the number to identify which asset is
 
 https://iqoption.com/traderoom/asset/1244?type=crypto&noAlternative=1
+
+
+<div id='database'/>
+
+## Save in database
+
+To save iqoption data to rethinkdb:
+- install rethinkdb
+- create database called 'iqoption'
+- create table 'candles'
+- run fallowing code:
+
+```
+python rethinkdb.py -a EURUSD -i 5
+```
 
 <div id='todo'/>
 
