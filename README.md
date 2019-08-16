@@ -126,6 +126,8 @@ python rethinkdb.py -a EURUSD -i 5
 - [analise backtrader](https://www.backtrader.com/)
 - Add function to load trained model
 - create public database to store historical data( It will need donation to server manteinance )
+- Create pipeline to deploy in a server
+- unit tests
 
 
 <div id='tipsStrategy'/>
