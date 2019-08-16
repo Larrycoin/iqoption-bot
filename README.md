@@ -152,7 +152,13 @@ IMPORTANT: Don't be naivy, don't use it in real account
 
 I'll be really happy if you support this project.
 
-Contribute with development [here](https://www.patreon.com/rafaelfaria)
+Contribute [here](https://www.patreon.com/rafaelfaria)
+
+It will be used to:
+- create server to historical data
+- improve code
+- create web interface
+- develop new features
 
 ## DATA
 
