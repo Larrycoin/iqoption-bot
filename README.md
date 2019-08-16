@@ -162,13 +162,10 @@ It will be used to:
 
 ## DATA
 
-### GraphQl iqoption
+- [Graphql iqoption](https://fininfo.iqoption.com/api/graphql?query=query%20GetActivesForQuotesPage(%24userGroupID%3A%20UserGroupID!%2C%20%24locale%3A%20LocaleName!)%20%7B%0A%20%20actives(userGroupID%3A%20%24userGroupID)%20%7B%0A%20%20%20%20id%0A%20%20%20%20ticker%0A%20%20%20%20name(source%3A%20TradeRoom%2C%20locale%3A%20%24locale)%0A%20%20%20%20__typename%0A%20%20%7D%0A%7D%0A&operationName=GetActivesForQuotesPage&variables=%7B%22userGroupID%22%3A%201%2C%20%22locale%22%3A%20%22pt_PT%22%7D)
+- [Historical data](https://static.cdnpub.info/api/quotes-history/quotes/2.0?to=1557273599&from=1557190801&active_id=1)
 
-https://fininfo.iqoption.com/api/graphql?query=query%20GetActivesForQuotesPage(%24userGroupID%3A%20UserGroupID!%2C%20%24locale%3A%20LocaleName!)%20%7B%0A%20%20actives(userGroupID%3A%20%24userGroupID)%20%7B%0A%20%20%20%20id%0A%20%20%20%20ticker%0A%20%20%20%20name(source%3A%20TradeRoom%2C%20locale%3A%20%24locale)%0A%20%20%20%20__typename%0A%20%20%7D%0A%7D%0A&operationName=GetActivesForQuotesPage&variables=%7B%22userGroupID%22%3A%201%2C%20%22locale%22%3A%20%22pt_PT%22%7D
 
-### Historical data
-
-https://static.cdnpub.info/api/quotes-history/quotes/2.0?to=1557273599&from=1557190801&active_id=1
 
 New test open 3 terminals
 ```
