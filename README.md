@@ -152,9 +152,7 @@ IMPORTANT: Don't be naivy, don't use it in real account
 
 I'll be really happy if you support this project.
 
-Doge coin: DRx4fsRzSdMGF4EdN66MG6o65gKy7ev1Y5
-
-Monero: 46x5StBXVLnXUF2BF6n53CGke2CZQCGk28ddDpkbFkzLbwqYCY33SWA7SJtGXM5LSR4b6hva6QsmFZ2RTRAZeyYxJHXk2cE
+Contribute with development [here](https://www.patreon.com/rafaelfaria)
 
 ## DATA
 
