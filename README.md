@@ -70,7 +70,16 @@ python main.py -a USDJPY -i 15 -f '-015'
 -f : file sufix name
 ```
 
+You can also use renko to better analyse tendence
 
+```
+python historicalrenko.py -a USDJPY -i 15
+
+# or streaming
+## this second command is under test and it may generate wrong stream
+
+python streamrenko.py -a USDJPY -i 15
+```
 
 <div id='discoverassets'/>
 
