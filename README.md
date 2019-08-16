@@ -167,11 +167,12 @@ https://fininfo.iqoption.com/api/graphql?query=query%20GetActivesForQuotesPage(%
 https://static.cdnpub.info/api/quotes-history/quotes/2.0?to=1557273599&from=1557190801&active_id=1
 
 New test open 3 terminals
-
+```
 python assets.py -a USDJPY -i 5
 python assets.py -a USDJPY -i 15 -f '-015'
 python assets.py -a USDJPY -i 30 -f '-30'
 python assets.py -a USDJPY -i 60 -f '-60'
+```
 
 when boilinger hit at same time buy/sell in at least 2 charts
 
