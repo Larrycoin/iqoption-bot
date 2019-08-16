@@ -119,6 +119,11 @@ python rethinkdb.py -a EURUSD -i 5
   - test different parameter to SVC
   - way to classify moviments
 - Optimize training with error function
+- Create backtest to improve tests
+- Use clean code to improve code
+- [analise backtrader](https://www.backtrader.com/)
+- Add function to load trained model
+- create public database to store historical data( It will need donation to server manteinance )
 
 
 <div id='tipsStrategy'/>
