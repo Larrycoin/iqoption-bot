@@ -100,7 +100,7 @@ https://iqoption.com/traderoom/asset/1244?type=crypto&noAlternative=1
 ## Save in database
 
 To save iqoption data to rethinkdb:
-- install rethinkdb
+- [install rethinkdb](https://computingforgeeks.com/how-to-install-rethinkdb-on-ubuntu/)
 - create database called 'iqoption'
 - create table 'candles'
 - run fallowing code:
