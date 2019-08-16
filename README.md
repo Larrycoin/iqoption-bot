@@ -82,6 +82,10 @@ python historicalrenko.py -a USDJPY -i 15
 python streamrenko.py -a USDJPY -i 15
 ```
 
+chart examples
+
+![vendabaixo](https://i.imgur.com/dm4WxCs.png)
+
 <div id='discoverassets'/>
 
 ## discover for assets
