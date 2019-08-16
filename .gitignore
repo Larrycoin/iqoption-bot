@@ -1,0 +1,14 @@
+\.idea/
+node_modules/
+*.pyc
+*.pkl
+
+userdata.py
+
+__pycache__
+
+
+models/*
+data/*
+
+*.csv
