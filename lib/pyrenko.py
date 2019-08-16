@@ -9,6 +9,9 @@ class renko:
         self.renko_prices = []
         self.renko_directions = []
         self.chart_title = ""
+        self.ax = plt
+        self.ema_period = 22
+        self.chart_iterval = 5
 
     # Setting brick size. Auto mode is preferred, it uses history
     def set_brick_size(self, HLC_history = None, auto = True, brick_size = 10.0):
@@ -17,6 +20,15 @@ class renko:
         else:
             self.brick_size = brick_size
         return self.brick_size
+
+    def set_ax(self, ax):
+        self.ax = ax
+
+    def set_chart_iterval(self, interval):
+        self.chart_iterval = interval
+
+    def set_ema_period(self, period):
+        self.ema_period = period
 
     def set_chart_title(self, title):
         self.chart_title = title
@@ -53,6 +65,11 @@ class renko:
                     self.renko_directions.append(np.sign(gap_div))
 
         return num_new_bars
+
+    def reset_data(self):
+        self.source_prices = []
+        self.renko_prices = []
+        self.renko_directions = []
 
     # Getting renko on history
     def build_history(self, prices):
@@ -125,20 +142,21 @@ class renko:
         return self.renko_directions
 
     def plot_renko(self, col_up = 'g', col_down = 'r'):
-        fig, ax = plt.subplots(1, figsize=(20, 10))
-        ax.set_title('Renko chart: ' + self.chart_title)
-        ax.set_xlabel('Renko bars')
-        ax.set_ylabel('Price')
+        #fig, ax = plt.subplots(1, figsize=(20, 10))
+        self.ax.clear()
+        self.ax.set_title('Renko chart: ' + self.chart_title)
+        self.ax.set_xlabel('Renko bars')
+        self.ax.set_ylabel('Price')
 
         # Calculate the limits of axes
-        ax.set_xlim(0.0,
+        self.ax.set_xlim(0.0,
                     len(self.renko_prices) + 1.0)
-        ax.set_ylim(np.min(self.renko_prices) - 3.0 * self.brick_size,
+        self.ax.set_ylim(np.min(self.renko_prices) - 3.0 * self.brick_size,
                     np.max(self.renko_prices) + 3.0 * self.brick_size)
 
         # exponential
-        ema = talib.EMA(np.array(self.renko_prices,dtype='f8'),timeperiod=22)
-        ax.plot(ema, color='#5957ce', lw=1, label='EMA (22)')
+        ema = talib.EMA(np.array(self.renko_prices,dtype='f8'),timeperiod=self.ema_period)
+        self.ax.plot(ema, color='#5957ce', lw=1, label='EMA ('+ str(self.ema_period) + ')')
 
         # Plot each renko bar
         for i in range(1, len(self.renko_prices)):
@@ -149,7 +167,7 @@ class renko:
             height = self.brick_size
 
             # Draw bar with params
-            ax.add_patch(
+            self.ax.add_patch(
                 patches.Rectangle(
                     (x, y),   # (x,y)
                     1.0,     # width
@@ -158,6 +176,7 @@ class renko:
                 )
             )
 
-        plt.show()
+        #plt.show()
+        plt.pause(self.chart_iterval)
 
 
