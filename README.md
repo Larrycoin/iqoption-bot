@@ -15,7 +15,6 @@ NOTE:
 ## Summary
 
 - [Contribute with Community](#contribe)
-- [What I could do?](#whaticoulddo)
 - [PYTHON VERSION 3.7](#pythonversion)
 - [How to start](#howtostart)
 - [discover for assets](#discoverassets)
@@ -23,6 +22,7 @@ NOTE:
 - [TIPS AND STRATEGY](#tipsStrategy)
 - [SUPPORT PROJECT](#support)
 
+<div id='contribe'/>
 
 ## Contribute with Community
 
@@ -32,6 +32,16 @@ do pull request with an explanation to be easy to understand why and what you ha
 Be happy !!!
 
 Please send me suggestions ... feedbacks are welcome
+
+
+<div id='pythonversion'/>
+
+### PYTHON VERSION
+
+I'm using anaconda with python 3.7
+
+
+<div id='howtostart'/>
 
 ## How to start
 
@@ -81,8 +91,8 @@ https://iqoption.com/traderoom/asset/1244?type=crypto&noAlternative=1
   - way to classify moviments
 - Optimize training with error function
 
-<div id='tipsStrategy'/>
 
+<div id='tipsStrategy'/>
 
 ## Tips
 
