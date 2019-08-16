@@ -8,6 +8,8 @@ This code is initially based on [Saulo Catharino's code](https://github.com/saul
 
 thanks for iqoption api to [Lu-Yi-Hsun](https://github.com/Lu-Yi-Hsun/iqoptionapi)
 
+thanks for this [renko library](https://github.com/quantroom-pro/pyrenko) and this [brick size Optimization](https://towardsdatascience.com/renko-brick-size-optimization-34d64400f60e)
+
 NOTE:
  - it not buy or sell on iqoption yet you must pay attencion to chart and do it manually
  - Do tests on test account
