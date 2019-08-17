@@ -13,6 +13,7 @@ thanks for this [renko library](https://github.com/quantroom-pro/pyrenko) and th
 NOTE:
  - it not buy or sell on iqoption yet you must pay attencion to chart and do it manually
  - Do tests on test account
+ - Give a star if it helps you 
 
 ## Summary
 
