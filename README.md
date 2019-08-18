@@ -1,5 +1,7 @@
 # iqoption-bot [beta]
 
+![vendabaixo](docs/iqobot.png)
+
 iqoption bot is a simple ml realtime in training using LogisticRegression
 
 it use bollinger bands to determinate if buy or sell
@@ -11,9 +13,10 @@ thanks for iqoption api to [Lu-Yi-Hsun](https://github.com/Lu-Yi-Hsun/iqoptionap
 thanks for this [renko library](https://github.com/quantroom-pro/pyrenko) and this [brick size Optimization](https://towardsdatascience.com/renko-brick-size-optimization-34d64400f60e)
 
 NOTE:
- - it not buy or sell on iqoption yet you must pay attencion to chart and do it manually
- - Do tests on test account
- - Give a star if it helps you 
+
+- it not buy or sell on iqoption yet you must pay attencion to chart and do it manually
+- Do tests on test account
+- Give a star if it helps you
 
 ## Summary
 
@@ -37,13 +40,11 @@ Be happy !!!
 
 Please send me suggestions ... feedbacks are welcome
 
-
 <div id='pythonversion'/>
 
 ### PYTHON VERSION
 
 I'm using anaconda with python 3.7
-
 
 <div id='howtostart'/>
 
@@ -68,6 +69,7 @@ python main.py -a EURUSD
 Or
 python main.py -a USDJPY -i 15 -f '-015'
 ```
+
 ```
 -a : It is the asset you wanna trade
 -i : the interval you wanna use [1,5,10,15,30,60,120,300,600,900,1800,3600,7200,14400,28800,43200,86400,604800,2592000,'all']
@@ -97,12 +99,12 @@ just change the number to identify which asset is
 
 https://iqoption.com/traderoom/asset/1244?type=crypto&noAlternative=1
 
-
 <div id='database'/>
 
 ## Save in database
 
 To save iqoption data to rethinkdb:
+
 - [install rethinkdb](https://computingforgeeks.com/how-to-install-rethinkdb-on-ubuntu/)
 - create database called 'iqoption'
 - create table 'candles'
@@ -130,7 +132,6 @@ python rethinkdb.py -a EURUSD -i 5
 - Create pipeline to deploy in a server
 - unit tests
 
-
 <div id='tipsStrategy'/>
 
 ## Tips
@@ -139,7 +140,6 @@ when spread is big and asset has small changes it doesn't compensate to start bu
 
 spread < 0,30
 change 0.08 %
-
 
 Best strategy: buy once when there are signals and if there is many signals close just do one one buy with profit 1%
 
@@ -158,6 +158,7 @@ I'll be really happy if you support this project.
 Contribute [here](https://www.patreon.com/rafaelfaria)
 
 It will be used to:
+
 - create server to historical data
 - improve code
 - create web interface
@@ -165,12 +166,11 @@ It will be used to:
 
 ## DATA
 
-- [Graphql iqoption](https://fininfo.iqoption.com/api/graphql?query=query%20GetActivesForQuotesPage(%24userGroupID%3A%20UserGroupID!%2C%20%24locale%3A%20LocaleName!)%20%7B%0A%20%20actives(userGroupID%3A%20%24userGroupID)%20%7B%0A%20%20%20%20id%0A%20%20%20%20ticker%0A%20%20%20%20name(source%3A%20TradeRoom%2C%20locale%3A%20%24locale)%0A%20%20%20%20__typename%0A%20%20%7D%0A%7D%0A&operationName=GetActivesForQuotesPage&variables=%7B%22userGroupID%22%3A%201%2C%20%22locale%22%3A%20%22pt_PT%22%7D)
+- [Graphql iqoption](<https://fininfo.iqoption.com/api/graphql?query=query%20GetActivesForQuotesPage(%24userGroupID%3A%20UserGroupID!%2C%20%24locale%3A%20LocaleName!)%20%7B%0A%20%20actives(userGroupID%3A%20%24userGroupID)%20%7B%0A%20%20%20%20id%0A%20%20%20%20ticker%0A%20%20%20%20name(source%3A%20TradeRoom%2C%20locale%3A%20%24locale)%0A%20%20%20%20__typename%0A%20%20%7D%0A%7D%0A&operationName=GetActivesForQuotesPage&variables=%7B%22userGroupID%22%3A%201%2C%20%22locale%22%3A%20%22pt_PT%22%7D>)
 - [Historical data](https://static.cdnpub.info/api/quotes-history/quotes/2.0?to=1557273599&from=1557190801&active_id=1)
 
-
-
 New test open 3 terminals
+
 ```
 python assets.py -a USDJPY -i 5
 python assets.py -a USDJPY -i 15 -f '-015'
@@ -179,7 +179,6 @@ python assets.py -a USDJPY -i 60 -f '-60'
 ```
 
 when boilinger hit at same time buy/sell in at least 2 charts
-
 
 good spread is less then 0.020
 
